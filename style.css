@@ -1,0 +1,116 @@
+
+:root {
+    --primary-color: #3b82f6;      /* Azul */
+    --secondary-color: #8b5cf6;    /* Roxo */
+    --accent-color: #60a5fa;       /* Azul Claro */
+}
+
+
+.about-page .detailed .about-text {
+    padding: 2rem;
+    background: #1e293b; /* Azul escuro ao invés de branco */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #f3f4f6;
+}
+
+
+   
+.projects-page .subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #94a3b8;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.projects-grid.expanded {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.project-card .category {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-links .btn {
+    flex: 1;
+    text-align: center;
+}
+
+.project-links .github {
+    background: #1e293b;
+}
+
+
+.contact-page .alert {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-page .alert.success {
+    background: #065f46;
+    color: #34d399;
+}
+
+.contact-page .alert.error {
+    background: #991b1b;
+    color: #fca5a5;
+}
+
+.contact-container.expanded {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.blog-page .subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #94a3b8;
+}
+
+.blog-posts.expanded {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-level {
+    display: block;
+    height: 5px;
+    background: #334155; /* Cor cinza escura para a barra restante */
+    border-radius: 5px;
+    margin-top: 0.3rem;
+}
+
+.skill-level span {
+    display: block;
+    height: 100%;
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
