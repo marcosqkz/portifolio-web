@@ -979,11 +979,19 @@ h1, h2, h3, h4 {
 
 .project-modal-close:hover { color: var(--text); }
 
-.project-modal-body { padding: 1.75rem; }
+.project-modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.75rem;
+}
 
 .project-modal-body img {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border);
+    background: var(--bg-alt);
     margin-bottom: 1.25rem;
 }
 
